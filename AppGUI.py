@@ -397,9 +397,6 @@ def ProtonGet(event):
         eval(script)
     script = script + ' was executed'
     ProtonOutput.config(text=script)
-def Dissasembler():
-    Bytes = input("Write in a number/word: ")
-    dis.dis(Bytes)
 
 def File():
     import os
