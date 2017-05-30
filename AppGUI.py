@@ -293,8 +293,6 @@ def Logout():
     LoginFrame.grid()
     Update.grid(sticky="WE")
     
-def custom():
-    print("OWOOWOWOW CUSTOM ITS WWORKIIIGN")
 highlightWords = {'if': 'red', 
                   'else': 'red', 
                   'print' : 'green', 
