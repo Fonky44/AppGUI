@@ -539,9 +539,10 @@ def par2(event):
 def savexml():
     savethis = xmlinput.get('1.0', 'end')
     findthis = xmlsearch.get()
-    openthis = open(findthis, 'w')
+    openthis = open(findthis, 'rw')
     writethis = openthis.write(savethis)
     openthis.close()
+            
 def CanShow():
     root.title("Cansas Lab")
     frame.grid_remove()
