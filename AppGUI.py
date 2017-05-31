@@ -119,7 +119,7 @@ class Canvo:
     def CanImage():
         ##Currently not showing image going to work on this later
         coords = 250,200
-        filename = tk.PhotoImage(file = "4day.gif")
+        filename = tk.PhotoImage(file = "memes/4day.gif")
         Master.filename = filename
         phot = MainCanvas.create_image(coords, image = filename)
         
@@ -618,7 +618,6 @@ Connect = tk.Button(SocketGUI, text="Connect", fg="#8caaf3", bg="#3b6705", font=
 GO = tk.Button(SocketGUI, text="GO", fg="#8caaf3", bg="#3b6705", font="Courier")
 SocketEntry = tk.Label(SocketGUI, bg="#3b6705", fg="#8caaf3", font=small, width="50")
 SocketLog = tk.Entry(SocketGUI, bg="#3b6705", fg="#8caaf3", font=smal, width="40")
-Dissa = tk.Button(frame, text="Dissasembler", fg="gray48", bg="maroon", font="monospace")
 PIKnapp = tk.Button(Mframe, text="Pi", bg="maroon", fg="gray48", font="Times")
 KUA = tk.Button(Games, text="Kua sier?", bg="maroon", fg="gray48", font="Bold")
 TRIANGLE = tk.Button(Games, text="Epic Triangle", bg="maroon", fg="gray48", font="Bold")
@@ -662,7 +661,6 @@ xmlinput.bind('<Key>', xmlLight)
 xmlsearch.focus_set()
 xmlsearch.bind('<Return>', xmlgetfile)
 Knapp.config(command=Bruteforce)
-Dissa.config(command=Dissasembler)
 PIKnapp.config(command=Pi)
 Socket.config(command=showsocket)
 PYA.config(command=MouseMovement)
@@ -694,7 +692,6 @@ LTI.bind('<Return>', Get)
 Master.grid(sticky="WENS")
 ##  Frame 1
 html.grid(sticky="WE")
-Dissa.grid(sticky="WE")
 frame.grid(sticky="W")
 frame.grid_propagate(0)
 Socket.grid(sticky="WE")
