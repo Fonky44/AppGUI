@@ -134,7 +134,7 @@ class Canvo:
         polygon = MainCanvas.create_polygon([150,75,225,0,300,75,225,150],     outline='gray', 
             fill='Black', width=5)
 def Pi():
-    um = input("How many numbers of pi do you want(max 1000): ")
+    um = input("How many numbers of pi do you want(max 10 000): ")
     a = open('Pi.txt', 'r')
     f = a.read()
     x = list(str(f))
@@ -539,9 +539,10 @@ def par2(event):
 def savexml():
     savethis = xmlinput.get('1.0', 'end')
     findthis = xmlsearch.get()
-    openthis = open(findthis, 'w')
+    openthis = open(findthis, 'rw')
     writethis = openthis.write(savethis)
     openthis.close()
+            
 def CanShow():
     root.title("Cansas Lab")
     frame.grid_remove()
