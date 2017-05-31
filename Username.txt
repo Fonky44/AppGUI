@@ -1,3 +1,1 @@
 admin:password
-dodobird:191802333
-Holly:McFlurry
