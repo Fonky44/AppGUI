@@ -28,7 +28,7 @@ small = ("Courier", 10)
 smal = ("Courier", 12)
 root = tk.Tk()
 root.title("Evolution Hub")
-Icon = "C:/Users//kalkidan.beyene//Desktop//Python Saves//Screw.ico"
+Icon = "Screw.ico"
 root.iconbitmap(Icon)
 Version = "-Version 11.1-"
 getme = ""
@@ -135,14 +135,9 @@ class Canvo:
             fill='Black', width=5)
 def Pi():
     um = input("How many numbers of pi do you want(max 10 000): ")
-    a = open('Pi.txt', 'r')
-    f = a.read()
-    x = list(str(f))
-    map(int,x)
-    print("3.", end="")
-    num = int(um)   
-    ##print(x[0:num])
-    print(''.join(x[0:num]))
+	amount = int(input("How many digits of pi do you want (max 10000)?"))
+	digits = str(open("Pi.txt", "r").read())[:amount]
+	print("3." + digits)
 
 def Unfinished():
     print("This Button is not finished")
