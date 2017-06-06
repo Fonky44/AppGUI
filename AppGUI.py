@@ -28,7 +28,7 @@ small = ("Courier", 10)
 smal = ("Courier", 12)
 root = tk.Tk()
 root.title("Evolution Hub")
-Icon = "C:/Users//kalkidan.beyene//Desktop//Python Saves//Screw.ico"
+Icon = "Screw.ico"
 root.iconbitmap(Icon)
 Version = "-Version 11.1-"
 getme = ""
