@@ -134,10 +134,9 @@ class Canvo:
         polygon = MainCanvas.create_polygon([150,75,225,0,300,75,225,150],     outline='gray', 
             fill='Black', width=5)
 def Pi():
-    um = input("How many numbers of pi do you want(max 10 000): ")
-	amount = int(input("How many digits of pi do you want (max 10000)?"))
-	digits = str(open("Pi.txt", "r").read())[:amount]
-	print("3." + digits)
+    amount = int(input("How many digits of pi do you want (max 10000)?"))
+    digits = str(open("Pi.txt", "r").read())[:amount]
+    print("3." + digits)
 
 def Unfinished():
     print("This Button is not finished")
